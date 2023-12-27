@@ -29,7 +29,7 @@ driver.get("https://sistema.gear-tecnorise.com:7050/gear/automacao/receptor")
 time.sleep(1)
 
 # Carrega os dados do Excel usando pandas
-df = pd.read_excel('Receptores.xlsx')
+df = pd.read_excel('dispositivos.xlsx')
 
 # Itera sobre as linhas do DataFrame
 for index, row in df.iterrows():
