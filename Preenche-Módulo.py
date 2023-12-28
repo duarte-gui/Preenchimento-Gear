@@ -34,6 +34,7 @@ df = pd.read_excel('dispositivos.xlsx')
 # Itera sobre as linhas do DataFrame
 for index, row in df.iterrows():
     # Adiciona um módulo
+    print (row['campo_ccondominio'], row['campo_name_modulo'])
     botao_add = driver.find_element(By.XPATH, "//button[@type='button']")
     botao_add.click()
     time.sleep(5)
